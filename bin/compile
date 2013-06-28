@@ -64,7 +64,8 @@ echo "-----> Compiling Mono application"
 
   export PATH="/app/mono/bin:${PATH}"
 
-  xbuild /verbosity:detailed /property:Configuration=Release ${SLN} | indent
+  xbuild /help
+  xbuild /verbosity:diagnostic /property:Configuration=Release ${SLN} | indent
 
 echo "-----> Build SUCCESS"
 fi
