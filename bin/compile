@@ -59,15 +59,12 @@ fi
 if [ "${SLN}" != "" ]; then
 echo "-----> Compiling Mono application"
 
-echo "Cache Dir : ${CACHE_DIR}"
   # need Mono in its expected location for xbuild to work
   ln -s "${CACHE_DIR}/mono" /app
 
-echo "Path : ${PATH}"
   export PATH="/app/mono/bin:${PATH}"
 
-echo "SLN : ${SLN}"
-  xbuild /property:Configuration=Release ${SLN} | indent
-fi
+  xbuild /verbosity:detailed /property:Configuration=Release ${SLN} | indent
 
 echo "-----> Build SUCCESS"
+fi
