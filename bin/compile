@@ -14,7 +14,7 @@ echo " ${line}"
 }
 
 # config
-MONO_VERSION="mono-2.11.1.tar.gz"
+MONO_VERSION="mono-2.10.9.tar.gz"
 XSP_VERSION="xsp-2.10.2.tgz"
 
 # s3 packages
