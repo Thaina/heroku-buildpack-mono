@@ -8,10 +8,11 @@ mkdir -p ${CACHE_DIR}
 
 apt-get update
 
+
 echo "----Install Mono----"
 apt-get -o Dir::Cache=${CACHE_DIR} install mono-complete mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
 
 echo "----Install XSP----"
 apt-get -o Dir::Cache=${CACHE_DIR} install mono-xsp2 mono-xsp2-base asp.net2-examples
 
-/mono/xsp2
+xsp2
