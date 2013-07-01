@@ -5,8 +5,8 @@ man apt-get
 echo "Cache Dir : ${CACHE_DIR}"
 mkdir -p ${CACHE_DIR}
 
-apt-get install dir::cache::archives=${CACHE_DIR} mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
+apt-get -o Dir::Cache::Archives=${CACHE_DIR} install mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
 
-apt-get install dir::cache::archives=${CACHE_DIR} mono-xsp2 mono-xsp2-base asp.net2-examples
+apt-get -o Dir::Cache::Archives=${CACHE_DIR} install mono-xsp2 mono-xsp2-base asp.net2-examples
 
 /mono/xsp2
