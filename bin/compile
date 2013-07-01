@@ -1,5 +1,5 @@
-ls -l /var/lib/apt/lists/lock
-ls -l /var/lib/dpkg/lock
+rm -f  /var/lib/apt/lists/lock
+rm -f /var/lib/dpkg/lock
 
 mkdir /var/cache/apt/
 
