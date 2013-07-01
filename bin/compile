@@ -1,5 +1,5 @@
-apt-get install mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
+sudo apt-get install mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
 
-apt-get install mono-xsp2 mono-xsp2-base asp.net2-examples
+sudo apt-get install mono-xsp2 mono-xsp2-base asp.net2-examples
 
 xsp2
