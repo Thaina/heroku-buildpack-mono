@@ -1,7 +1,6 @@
 BUILD_DIR=$1
 CACHE_DIR=$2
 
-man apt-get
 echo "Cache Dir : ${CACHE_DIR}"
 mkdir -p ${CACHE_DIR}
 
