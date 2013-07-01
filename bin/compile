@@ -1,4 +1,5 @@
 ls -l /var/lib/apt/lists/lock
+ls -l /var/lib/dpkg/lock
 
 apt-get install mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
 
