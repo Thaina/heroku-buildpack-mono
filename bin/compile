@@ -6,6 +6,7 @@ CACHE_DIR=$2
 echo "Cache Dir : ${CACHE_DIR}"
 mkdir -p ${CACHE_DIR}
 
+apt-get install python-software-properties
 apt-add-repository "deb http://badgerports.org precise main"
 
 apt-get update
