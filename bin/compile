@@ -1,10 +1,7 @@
-rm -f  /var/lib/apt/lists/lock
-rm -f /var/lib/dpkg/lock
+mkdir -p "/mono/"
 
-mkdir -p "/var/cache/apt/"
+apt-get install Dir="/mono/" mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
 
-apt-get install mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
+apt-get install Dir="/mono/" mono-xsp2 mono-xsp2-base asp.net2-examples
 
-apt-get install mono-xsp2 mono-xsp2-base asp.net2-examples
-
-xsp2
+/mono/xsp2
