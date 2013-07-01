@@ -1,6 +1,8 @@
 ls -l /var/lib/apt/lists/lock
 ls -l /var/lib/dpkg/lock
 
+mkdir /var/cache/apt/
+
 apt-get install mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
 
 apt-get install mono-xsp2 mono-xsp2-base asp.net2-examples
