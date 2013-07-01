@@ -1,3 +1,7 @@
+BUILD_DIR=$1
+CACHE_DIR=$2
+
+echo ${CACHE_DIR}
 mkdir -p ${CACHE_DIR}
 
 apt-get install dir::cache::archives="${CACHE_DIR}" mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
