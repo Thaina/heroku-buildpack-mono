@@ -1,11 +1,11 @@
 BUILD_DIR=$1
 CACHE_DIR=$2
 
-echo ${CACHE_DIR}
+echo "Cache Dir : ${CACHE_DIR}"
 mkdir -p ${CACHE_DIR}
 
-apt-get install dir::cache::archives="${CACHE_DIR}" mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
+apt-get install dir::cache::archives=${CACHE_DIR} mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
 
-apt-get install dir::cache::archives="${CACHE_DIR}" mono-xsp2 mono-xsp2-base asp.net2-examples
+apt-get install dir::cache::archives=${CACHE_DIR} mono-xsp2 mono-xsp2-base asp.net2-examples
 
 /mono/xsp2
