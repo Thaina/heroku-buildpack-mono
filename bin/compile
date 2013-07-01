@@ -1,7 +1,7 @@
-mkdir -p "/mono/"
+mkdir -p ${CACHE_DIR}
 
-apt-get install Dir="/mono/" mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
+apt-get install Dir="${CACHE_DIR}" mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
 
-apt-get install Dir="/mono/" mono-xsp2 mono-xsp2-base asp.net2-examples
+apt-get install Dir="${CACHE_DIR}" mono-xsp2 mono-xsp2-base asp.net2-examples
 
 /mono/xsp2
