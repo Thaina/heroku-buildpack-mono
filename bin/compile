@@ -50,6 +50,7 @@ export CPPPATH="$INCLUDE_PATH"
 
 echo "----Install XSP----"
 mkdir -p "${CACHE_DIR}/xsp"
+apt-get update
 apt-get -o Dir::Cache="${CACHE_DIR}/xsp" install mono-xsp2 mono-xsp2-base asp.net2-examples
 
 xbuild /property:Configuration=Release ${SLN} | indent
