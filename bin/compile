@@ -4,6 +4,8 @@ CACHE_DIR=$2
 echo "Cache Dir : ${CACHE_DIR}"
 mkdir -p ${CACHE_DIR}
 
+apt-get update
+
 echo "Install Mono"
 apt-get -o Dir::Cache=${CACHE_DIR} install mono mono-gmcs mono-gac mono-utils monodevelop monodoc-browser monodevelop-nunit monodevelop-versioncontrol
 
